@@ -100,6 +100,12 @@ module.exports = {
                 use: [
                     'style-loader', 
                     'css-loader',
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            javascriptEnabled: true
+                        },
+                    }
                     // 'postcss-loader',
                     // {
                     //     loader: "less-loader",
